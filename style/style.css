@@ -1,0 +1,21 @@
+img {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px 150px 150px;
+    background-color: gainsboro;
+    width: 500px;
+}
+
+.tabuleiro div {
+    border: 1px solid black;
+}
