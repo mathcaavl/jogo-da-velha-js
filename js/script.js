@@ -1,6 +1,5 @@
 // ...
 const listBtn = []
-const players = ['x', 'o']
 
 // Definindo Variaveis
 listBtn.push(document.querySelector('.casa1'));
@@ -18,22 +17,30 @@ for (let i = 0; i < listBtn.length; i++) {
     listBtn[i].addEventListener('click', preencherValor);
 }
 
-function preencherValor (e) {
-    const vezJogar = verificarJogador()
-    console.log(vezJogar);
-    const item = document.createElement('img');
-    if (vezJogar == "x") {
-        item.src="images/x.jpg";
-        e.target.appendChild(item);
-    } else {
-        item.src="images/bola.jpg";
-        e.target.appendChild(item);
+// Objeto para definir a vez 
+var turno = {
+    atual: 0,
+
+    get: function () {
+        return this.atual;
+    },
+
+    set: function(turn) {
+        this.atual = turn;
     }
-    //item.src = "images/bola.jpg";
-    //e.target.appendChild(item);
 }
 
-function verificarJogador () {
-    var jogador = 'x';
-    return jogador;
+// Funções
+function preencherValor (e) {
+    const imagem = document.createElement('img');
+
+    if (turno.atual == 0) {
+        imagem.src="images/x.jpg";
+        e.target.appendChild(imagem)
+        turno.set(1);
+    } else { 
+        imagem.src="images/bola.jpg"
+        e.target.appendChild(imagem);
+        turno.set(0);
+    }
 }
