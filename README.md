@@ -1,5 +1,11 @@
-# jogo-da-velha-js
-Projeto do Jogo da Velha para fixação e aprendizagem da Linguagem JavaScript
-Foram usadas as tecnologias HTML5, CSS3 e Javascript.
+# Jogo da Velha #️⃣
+<hr>
 
-Link: https://jogo-da-velha-js.netlify.app
+#### 👨🏻‍💻  [About this Project ] : 
+
+##### Esse projeto teve como objetivo aprofundar um pouco mais a minha lógica de programação.
+##### Apesar de funcional ainda está com alguns bugs, mais pra frente pretendo refatora-lo e aplicar uma solução melhor que a atual
+<hr>
+
+### 👨🏻‍💻  [Techs] :
+#### HTML5 / CSS3 / Javascript
