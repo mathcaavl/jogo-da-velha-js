@@ -8,4 +8,4 @@
 <hr>
 
 ### 👨🏻‍💻  [Techs] :
-#### HTML5 / CSS3 / Javascript
+#### HTML5 / CSS3 / Javascript :) 
