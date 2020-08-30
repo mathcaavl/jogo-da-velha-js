@@ -13,13 +13,6 @@ listBtn.push(document.querySelector('.casa7'));
 listBtn.push(document.querySelector('.casa8'));
 listBtn.push(document.querySelector('.casa9'));
 
-// Criando Matriz
-const matrizTabuleiro = [
-    [document.querySelector('.casa1'), document.querySelector('.casa2'), document.querySelector('.casa3')],
-    [document.querySelector('.casa4'), document.querySelector('.casa5'), document.querySelector('.casa6')],
-    [document.querySelector('.casa7'), document.querySelector('.casa8'), document.querySelector('.casa9')],
-]
-
 // Eventos
 for (let i = 0; i < listBtn.length; i++) {
     listBtn[i].addEventListener('click', preencherValor);
@@ -115,9 +108,3 @@ function reiniciar () {
         listBtn[i].innerHTML = "";
     }
 }
-
-//combinações vencedoras:
-//123, 456, 789
-//146, 258, 369
-//159, 357 
-//listBtn[i].getAttribute('img')
